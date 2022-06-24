@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>home page</h1>
+
+<br>
+
+
+
+
+
+
+
+{% for something in somethings %}
+<div>
+    <p>
+        User : {{something.user}}
+    </p>
+    <p>
+        bot : {{something.bot}}
+    </p>
+</div>
+
+{% endfor %}
+
+<form action="" method="GET">
+    <input type="text" name="response" placeholder="type something" />
+    <input type="submit" value="enter" />
+</form>
+
+<br>
+
+
+<a href="/about">go to about</a>
+{% endblock content %}
